@@ -1,0 +1,52 @@
+/* Custom Modern Styles */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* Make the table header look cleaner */
+thead.bg-light th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    color: #6c757d;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+}
+
+/* Smooth hover effect for rows */
+.table-hover tbody tr:hover {
+    background-color: #f1f4f9;
+    transition: 0.2s ease-in-out;
+}
+/* Style for the delete button in the table rows */
+.btn-delete {
+    background-color: transparent;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    padding: 4px 12px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.btn-delete:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Customizing Buttons */
+.btn {
+    border-radius: 8px; /* Slightly rounder buttons */
+    font-weight: 500;
+}
+
+.card {
+    border: none;
+}
+
+/* Simple transition for links */
+a {
+    transition: 0.3s;
+}

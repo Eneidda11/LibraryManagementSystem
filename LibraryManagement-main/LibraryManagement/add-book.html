@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book - Library Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-light" style="font-family: 'Inter', sans-serif;">
+    <nav class="navbar navbar-dark bg-dark shadow-sm mb-5">
+        <div class="container">
+            <a class='navbar-brand fw-bold mb-0 h1' href='index.html'>📖 My Library App</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-lg rounded-4">
+                    <div class="card-body p-5">
+                        <h2 class="card-title fw-bold mb-2">Add New Book</h2>
+                        <p class="text-muted mb-4">Expand the knowledge base! 🚀</p>
+                        
+                        <form id="addBookForm">
+                            <div class="mb-3">
+                                <label for="bookTitle" class="form-label fw-semibold">Book Title</label>
+                                <input type="text" class="form-control rounded-3" id="bookTitle" placeholder="e.g. The Hobbit" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookAuthor" class="form-label fw-semibold">Author</label>
+                                <input type="text" class="form-control rounded-3" id="bookAuthor" placeholder="Who wrote this?" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7 mb-3">
+                                    <label for="bookGenre" class="form-label fw-semibold">Genre</label>
+                                    <input type="text" class="form-control rounded-3" id="bookGenre" placeholder="Mystery, Sci-Fi..." required>
+                                </div>
+                                <div class="col-md-5 mb-3">
+                                    <label for="publishedYear" class="form-label fw-semibold">Year</label>
+                                    <input type="number" class="form-control rounded-3" id="publishedYear" min="1000" max="2099" placeholder="2024" required>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <a class='btn btn-light px-4 border text-muted' href='index.html'>Cancel</a>
+                                <button type="submit" class="btn btn-primary px-4 shadow-sm" onclick="saveBookInfo(event)">Save Book</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/add-book.js"></script>
+</body>
+</html>

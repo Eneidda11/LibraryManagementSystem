@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Book - Library Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <div class="container">
+            <a class='navbar-brand mb-0 h1' href='index.html'>Library Management System</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body p-5">
+                        <h2 class="card-title mb-4">Edit Book</h2>
+                        <form id="editBookForm">
+                            <div class="mb-3">
+                                <label for="bookTitle" class="form-label">Book Title</label>
+                                <input type="text" class="form-control" id="bookTitle" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookId" class="form-label">Book ID</label>
+                                <input type="text" class="form-control" id="bookId" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookAuthor" class="form-label">Author</label>
+                                <input type="text" class="form-control" id="bookAuthor" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bookGenre" class="form-label">Genre</label>
+                                <input type="text" class="form-control" id="bookGenre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="publishedYear" class="form-label">Published Year</label>
+                                <input type="number" class="form-control" id="publishedYear" min="1000" max="2099" required>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <a class='btn btn-secondary' href='index.html'>Cancel</a>
+                                <button type="submit" class="btn btn-primary">Update Book</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="scripts/edit-book.js"></script>
+</body>
+</html>
